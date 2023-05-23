@@ -14,8 +14,7 @@ const score = grade => {
         console.log("Grade > 100");
     }else if (grade < 0 ){
         console.log("Grade < 0");
-    }
-    else  {      
+    }else  {      
         console.log("You got F");
     }
  
