@@ -66,10 +66,93 @@
 //     return false
 // }
 
-//exercises 6
+//exercises 6 *finish
+// function fizzBuzz(n){
+//     let sandFizz = "fizz";
+//     let sandBuzz = "Buzz";
+//     let result = [];
+//     for (let i = 1 ; i < n; i++){
+//         if ( (i % 3) == 0 ) {
+//             // console.log(sandFizz)
+//             result.push(sandFizz);
+//         }else if ((i % 5) == 0) {
+//             // console.log(sandBuzz)
+//             result.push(sandBuzz);
+//         }else {
+//             // console.log(i)
+//             result.push(i);
+//         }
+//     }
+//     return result;
+// }
+// console.log(fizzBuzz(21));
+
+
+
 
 // exercises 7
 // function gba(n1, n2) {
 //   return n2 / n1 ;
 // }
 // console.log(gba(10, 15));
+
+
+// exercises 12 *finish
+// function filterLt(n , chackArr){
+//     let newArrBox = [];
+
+//     for (let i = 0; i < chackArr.length; i++){
+//         if (chackArr[i] < n) {
+//             newArrBox.push(chackArr[i])
+//         }
+
+//     }
+//     return newArrBox;
+// }
+
+
+// const arr = [120, 112, 111, 130, 169, 101]
+
+// console.log(filterLt(112, arr));
+
+// exercises 13 *finish
+// function filterLt(n , chackArr){
+//     let newArrBox = [];
+
+//     for (let i = 0; i < chackArr.length; i++){
+//         if (chackArr[i] > n) {
+//             newArrBox.push(chackArr[i])
+//         }
+
+//     }
+//     return newArrBox;
+// }
+
+
+// const arr = [120, 112, 111, 130, 169, 101]
+
+// console.log(filterLt(0, arr));
+
+// exercises 16 *finish
+// function mean(onArr){
+// let resultAvg;
+// let giv;
+//     for (let i = 0; i < onArr.length; i++){
+//         if (typeof(arrAvg[i]) === "string") {
+//             resultAvg = null;        
+//             return resultAvg
+//         }
+//             giv = onArr.reduce((sum ,total) => {
+//                 return sum + total;
+//             }) ;
+//             resultAvg = giv / arrAvg[i];
+            
+           
+        
+//     }
+//     return resultAvg;
+// }
+// const arrAvg = [1,2,3];
+// console.log(mean(arrAvg));
+
+// console.log(typeof(arrAvg[2]))
