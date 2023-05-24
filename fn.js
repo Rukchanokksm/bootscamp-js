@@ -30,7 +30,7 @@
 //   }
 // });
 
-// const res = ["baegie", "Banana", "Mr Donut", "Mr tee"].map((sn, i) => {
+// const res = ["baegie", "Banana", "Mr Donut", "Mr tee"].map((sn) => {
 //   return sn.startsWith("Mr");
 // });
 
@@ -43,47 +43,64 @@
 // });
 // console.table(result);
 
-// function newNum(vl, cd) {
-//   let newArr = new Array(vl.length);
-//   for (let i = 0; i < vl.length; i++) {
-//     if (cd(vl[i])) {
-//       newArr[i] = vl[i] * 2;
-//     } else {
-//       newArr[i] = vl[i];
-//     }
-//   }
-//   return newArr;
+function newNum(vl, cd) {
+  let newArr = new Array(vl.length);
+  for (let i = 0; i < vl.length; i++) {
+    if (cd(vl[i])) {
+      newArr[i] = vl[i] * 2;
+    } else {
+      newArr[i] = vl[i];
+    }
+  }
+  return newArr;
+}
+
+const number = [50, 13, 66, 80];
+
+console.log(
+  newNum(number, (n) => {
+    return (n % 5) === 0;
+  })
+);
+
+// const detail = [["A", 22, true], ["B", 26, true], ["C", 28, false],["D", 28, false]];
+
+// function personType(pd) {
+//   return {
+//     name: pd[0],
+//     age: pd[1],
+//     thai: pd[2],
+//   };
 // }
 
-// const number = [50, 13, 66, 80];
+// const newPer = personType(detail)
+// console.log(newPer);
 
-// console.log(
-//   newNum(number, (n) => {
-//     return n % 5 === 0;
-//   })
-// );
 
-const detail = [
-  ["A", 22, true],
-  ["B", 26, true],
-  ["C", 28, false],
-];
+// // const nema = {
+// //   name: ["jane" , "Eah", "Bee"],
+// //   type: ["Male","Female","Female"]
+// // }
 
-function personType(pd) {
-  return {
-    name: pd[0],
-    age: pd[1],
-    thai: pd[2],
-  };
-}
+// // console.log(nema.name[1])
 
-personType(detail);
-console.log();
+// function reTail(dp) {
+//   let newArrv = new Array(dp.length);
+//   for (let i = 0; i < dp.length; i++) {
+//     newArrv = dp[i]
+//     return newArrv;
+//   }
+// }
+// console.log(reTail(detail));
 
-function reTail(dp) {
-  let newArrv = new Array(dp.length);
-  for (let i = 0; i < dp.length; i++) {}
-  return newArrv;
-}
 
-reTail();
+
+// function hel (vl){
+//   let myNewArr = new Array(vl.length)
+//   for (let i = 0; i < vl.length; i++){
+//     myNewArr[i] = (vl[i] * 2);
+//   }
+//   return myNewArr;
+// }
+// const myArr = [5 , 8 , 7 ,9];
+// console.log(hel(myArr))

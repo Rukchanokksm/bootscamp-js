@@ -93,11 +93,20 @@
 // }
 // console.log(gba(10, 15));
 
+//exercises 9
+function primen(n){
+    let newList =new Array(n);
+    for (let i = 0; i < n;i++){
+            newList[i] = i  + 2   
+    }
+    return newList;
+}
+console.log(primen(4))
 //exercises 11
 // function articleFuc(text, overText, count) {}
 
-const articleCleverse = "Test.";
-console.log(articleCleverse.length);
+// const articleCleverse = "Test.";
+// console.log(articleCleverse.length);
 
 // exercises 12 *finish
 // function filterLt(n, chackArr) {
@@ -142,7 +151,7 @@ console.log(articleCleverse.length);
 //             return resultAvg
 //         }
 //             giv = onArr.reduce((sum ,total) => {
-//                 return sum + total;
+//                 return sum + total;-
 //             }) ;
 //             resultAvg = giv / arrAvg[i];
 
