@@ -87,31 +87,31 @@
 // }
 // console.log(fizzBuzz(21));
 
-
-
-
 // exercises 7
 // function gba(n1, n2) {
-//   return n2 / n1 ;
+//   return ;
 // }
 // console.log(gba(10, 15));
 
+//exercises 11
+// function articleFuc(text, overText, count) {}
+
+const articleCleverse = "Test.";
+console.log(articleCleverse.length);
 
 // exercises 12 *finish
-// function filterLt(n , chackArr){
-//     let newArrBox = [];
+// function filterLt(n, chackArr) {
+//   let newArrBox = [];
 
-//     for (let i = 0; i < chackArr.length; i++){
-//         if (chackArr[i] < n) {
-//             newArrBox.push(chackArr[i])
-//         }
-
+//   for (let i = 0; i < chackArr.length; i++) {
+//     if (chackArr[i] < n) {
+//       newArrBox.push(chackArr[i]);
 //     }
-//     return newArrBox;
+//   }
+//   return newArrBox;
 // }
 
-
-// const arr = [120, 112, 111, 130, 169, 101]
+// const arr = [120, 112, 111, 130, 169, 101];
 
 // console.log(filterLt(112, arr));
 
@@ -128,7 +128,6 @@
 //     return newArrBox;
 // }
 
-
 // const arr = [120, 112, 111, 130, 169, 101]
 
 // console.log(filterLt(0, arr));
@@ -139,20 +138,17 @@
 // let giv;
 //     for (let i = 0; i < onArr.length; i++){
 //         if (typeof(arrAvg[i]) === "string") {
-//             resultAvg = null;        
+//             resultAvg = null;
 //             return resultAvg
 //         }
 //             giv = onArr.reduce((sum ,total) => {
 //                 return sum + total;
 //             }) ;
 //             resultAvg = giv / arrAvg[i];
-            
-           
-        
+
 //     }
 //     return resultAvg;
 // }
 // const arrAvg = [1,2,3];
 // console.log(mean(arrAvg));
-
 // console.log(typeof(arrAvg[2]))
