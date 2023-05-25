@@ -1,25 +1,34 @@
 //exercises 1
-// const draw = (n) => {
-//   let s = "";
-//   s += "*";
-//   for (let i = 1; i <= n; i++) {
-//     console.log((s += s));
-//   }
-//   return;
-// };
-// draw(5);
+const draw = (n) => {
+let s = "";
+ for (let i = 1; i <= n; i++) {
+   s += "*"
+   console.log(s)
+  }
+  
+return s;
+};
+console.log(draw(5));
+
 
 //exercises 2
-
 // const draw = (n) => {
 //   let s = "";
-//   s += "*";
 //   for (let i = 1; i <= n; i++) {
-//     s += s;
+//     console.log(s += "*") ;
 //   }
 //   return s;
 // };
-// console.log(draw(5));
+// draw(5);
+
+//output 
+// *
+// **
+// ***
+// ****
+// *****
+
+
 
 // exercises 3
 
@@ -232,51 +241,51 @@
 // console.log(mean(myArr));
 // *****************************************************
 //exercises 17
-function mode(arr) {
-  const dict = {};
-  for (let i = 0; i < arr.length; i++) {
-    const elem = arr[i];
+// function mode(arr) {
+//   const dict = {};
+//   for (let i = 0; i < arr.length; i++) {
+//     const elem = arr[i];
 
-    if (!dict[elem]) {
-      dict[elem] = 1;
-    } else {
-      dict[elem] += 1;
-    }
-  }
+//     if (!dict[elem]) {
+//       dict[elem] = 1;
+//     } else {
+//       dict[elem] += 1;
+//     }
+//   }
 
-  console.log(dict);
+//   console.log(dict);
 
-  let maxFreq = 0;
-  let mode = null;
+//   let maxFreq = 0;
+//   let mode = null;
 
-  for (k in dict) {
-    const freq = dict[k];
-    console.log(`freq ${freq} this k is ${k}`);
-    if (freq === maxFreq) {
-      mode = null;
-      continue;
-    }
+//   for (k in dict) {
+//     const freq = dict[k];
+//     console.log(`freq ${freq} this k is ${k}`);
+//     if (freq === maxFreq) {
+//       mode = null;
+//       continue;
+//     }
 
-    if (freq > maxFreq) {
-      maxFreq = freq;
-      mode = k;
-    }
-  }
+//     if (freq > maxFreq) {
+//       maxFreq = freq;
+//       mode = k;
+//     }
+//   }
 
-  return mode;
-}
+//   return mode;
+// }
 
-console.log(mode([1, 2, 1, 4, 5, 6, 2, 1, 11]));
-console.log(mode([1, 2]));
-//
-const o = {
-  foo: null,
-  bar: null,
-};
+// console.log(mode([1, 2, 1, 4, 5, 6, 2, 1, 11]));
+// console.log(mode([1, 2]));
+// //
+// const o = {
+//   foo: null,
+//   bar: null,
+// };
 
-for (k in o) {
-  console.log(k);
-}
+// for (k in o) {
+//   console.log(k);
+// }
 
 // exercises 18;
 // function mid(vl) {
