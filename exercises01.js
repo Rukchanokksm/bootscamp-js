@@ -94,14 +94,51 @@
 // console.log(gba(10, 15));
 
 //exercises 9
-function primen(n){
-    let newList =new Array(n);
-    for (let i = 0; i < n;i++){
-            newList[i] = i  + 2   
-    }
-    return newList;
-}
-console.log(primen(4))
+// function primen(n) {
+// if ( n < 1) {
+//     return [];
+// }
+
+//   let newList = new Array(n);
+//   for (let i = 2; i < n; i++) {
+//     for (let j = 2; j < n; j++) {
+//       if (i / j === 0) {
+//         newList[i] = j;
+//       }
+//     }
+//   }
+//   return newList;
+// }
+// console.log(primen(5));
+
+//exercises 10
+
+// function drawDown(n) {
+//   let peak = 0;
+//   let maxDown = 0;
+//   let btwVl = 0;
+//   for (let i = 0; i < n.length; i++) {
+//     if (n[i] > n[i]) {
+//       peak = n[i];
+//     }
+//   }
+
+//   //   let peak = Math.max(...n);
+//   //   let maxDown = 0;
+
+//   //   for (let i = 0; i < n.length; i++) {
+//   //     if (peak - n[i]) {
+//   //       maxDown = peak - n[i];
+//   //     }
+//   //   }
+//   //   return maxDown;
+//   return peak;
+// }
+
+// const chart = [110, 105, 95, 9, 80, 17, 120, 115, 11];
+// drawDown(chart);
+// console.log(drawDown(chart));
+
 //exercises 11
 // function articleFuc(text, overText, count) {}
 
@@ -140,24 +177,204 @@ console.log(primen(4))
 // const arr = [120, 112, 111, 130, 169, 101]
 
 // console.log(filterLt(0, arr));
+// ****************************************************************
+//exercises 14
+// function isMember(arr, n) {
+//   let found = false;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (n === arr[i]) {
+//       found = true;
+//     }
+//   }
+//   return found;
+// }
+
+// const menberArr = [1, 3, 7, 12];
+// console.log(isMember(menberArr, 123));
+
+// // const fid = menberArr.filter()
+// ****************************************************************
 
 // exercises 16 *finish
-// function mean(onArr){
-// let resultAvg;
-// let giv;
-//     for (let i = 0; i < onArr.length; i++){
-//         if (typeof(arrAvg[i]) === "string") {
-//             resultAvg = null;
-//             return resultAvg
-//         }
-//             giv = onArr.reduce((sum ,total) => {
-//                 return sum + total;-
-//             }) ;
-//             resultAvg = giv / arrAvg[i];
-
+// function mean(onArr) {
+//   let resultAvg;
+//   let giv;
+//   for (let i = 0; i < onArr.length; i++) {
+//     if (typeof arrAvg[i] === "string") {
+//       resultAvg = null;
+//       return resultAvg;
 //     }
-//     return resultAvg;
+//     giv = onArr.reduce((sum, total) => {
+//       return sum + total;
+//     });
+//     resultAvg = giv / arrAvg[i];
+//   }
+//   return resultAvg;
 // }
-// const arrAvg = [1,2,3];
+// const arrAvg = [1, 2, "foo"];
 // console.log(mean(arrAvg));
-// console.log(typeof(arrAvg[2]))
+// console.log(typeof arrAvg[2]);
+
+// function mean(n) {
+//   let newVl;
+//   let nonNum;
+//   for (let i = 0; i < n.length; i++) {
+//     if (typeof n[i] === "string") {
+//       let nonNum = null;
+//       return nonNum;
+//     }
+//     newVl.push();
+//   }
+//   return newVl;
+// }
+
+// const myArr = [1, 2, 3];
+// console.log(mean(myArr));
+// *****************************************************
+//exercises 17
+function mode(arr) {
+  const dict = {};
+  for (let i = 0; i < arr.length; i++) {
+    const elem = arr[i];
+
+    if (!dict[elem]) {
+      dict[elem] = 1;
+    } else {
+      dict[elem] += 1;
+    }
+  }
+
+  console.log(dict);
+
+  let maxFreq = 0;
+  let mode = null;
+
+  for (k in dict) {
+    const freq = dict[k];
+    console.log(`freq ${freq} this k is ${k}`);
+    if (freq === maxFreq) {
+      mode = null;
+      continue;
+    }
+
+    if (freq > maxFreq) {
+      maxFreq = freq;
+      mode = k;
+    }
+  }
+
+  return mode;
+}
+
+console.log(mode([1, 2, 1, 4, 5, 6, 2, 1, 11]));
+console.log(mode([1, 2]));
+//
+const o = {
+  foo: null,
+  bar: null,
+};
+
+for (k in o) {
+  console.log(k);
+}
+
+// exercises 18;
+// function mid(vl) {
+//   if (vl.length <= 2) {
+//     return vl;
+//   }
+
+//   if (vl.length % 2 === 0) {
+//     let newPos = vl.length / 2;
+//     return [vl[newPos - 1], vl[newPos]];
+//   }
+
+//   return newArr;
+// }
+
+// const arr = [1, 2, 3, 4];
+// console.log(mid(arr));
+
+//exercises 21
+// function flatMap(vlArr) {
+//   let newArr = [];
+//   for (let i = 0; i < vlArr.length; i++) {
+// let inArr = vlArr[i]; // วนลูปในแต่ละตำแหน่งข้างในของ index array
+//     console.log(inArr);
+//     for (let j = 0; j < inArr.length; j++) {
+//       newArr.push(inArr[j]);
+//     }
+//   }
+//   return newArr;
+// }
+// const arr = [
+//   [1, 2, 3],
+//   [100, 200],
+//   [10, 20],
+// ];
+// flatMap(arr);
+// console.log(flatMap(arr));
+// function mapMean(vArr) {
+//     let avgArr = [];
+//     for (let i = 0; i < vArr.length; i++) {
+//       for (let j = 0; j < vArr[i].length; j++) {
+//         avgArr.push(vArr[i][j]);
+//       }
+//     }
+//     return avgArr;
+//   }
+//   const arr = [
+//     [1, 2, 3],
+//     [100, 200],
+//     [10, 20],
+//   ];
+//   mapMean(arr);
+//   console.log(mapMean(arr));
+
+// exercises 22 *finish
+// function mapMean(vArr) {
+//   let avgArr = [];
+//   let inV = 0;
+//   for (let i = 0; i < vArr.length; i++) {
+//     inV = vArr[i].reduce((total, sum) => {
+//       return total + sum;
+//     });
+//     avgArr.push((allV = inV / vArr[i].length));
+//   }
+//   return avgArr;
+// }
+// const arr = [
+//   [1, 2, 3],
+//   [100, 200],
+//   [10, 20],
+// ];
+// console.log(mapMean(arr));
+
+//exercises 23 *finish
+// function unique(myArr) {
+//   let newArr = [];
+//   for (let i = 0; i < myArr.length; i++) {
+//     if (typeof myArr[i] !== "number") {
+//       newArr.push(myArr[i]);
+//       continue;
+//     }
+//     newArr.push(myArr[i] * -1);
+//   }
+//   return newArr;
+// }
+// const arr = [-1, 5, 4, "yum"];
+// console.log(unique(arr));
+
+// ************************************************
+//exercises 27 *finish
+// function tobyteText(nt) {
+//   let numBerText = [];
+//   for (let i = 0; i < nt.length; i++) {
+//     numBerText.push(nt.charCodeAt(i));
+//   }
+
+//   return numBerText;
+// }
+// const text = "Hello ";
+// tobyteText(text);
+// console.log(tobyteText(text));
