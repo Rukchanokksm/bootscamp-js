@@ -1,17 +1,15 @@
-//exercises 1
-const draw = (n) => {
-let s = "";
- for (let i = 1; i <= n; i++) {
-   s += "*"
-   console.log(s)
-  }
-  
-return s;
-};
-console.log(draw(5));
+//exercises 1 *finish
+// const draw = (n) => {
+//   let s = "";
 
+//   for (let i = 1; i <= n; i++) {
+//     console.log((s = "******"));
+//   }
+//   return s;
+// };
+// console.log(draw(5));
+// =====================================================================
 
-//exercises 2
 // const draw = (n) => {
 //   let s = "";
 //   for (let i = 1; i <= n; i++) {
@@ -21,16 +19,15 @@ console.log(draw(5));
 // };
 // draw(5);
 
-//output 
+//output
 // *
 // **
 // ***
 // ****
 // *****
+// ===============================================================
 
-
-
-// exercises 3
+// exercises 3 *finish
 
 // const maxNegMinPos = (arr) => {
 //   let maxValue = arr[0];
@@ -42,14 +39,25 @@ console.log(draw(5));
 //       maxNeg = arr[i];
 //     }
 //   }
-//   console.log(maxValue);
-//   console.log(maxNeg);
+
+//   return maxValue; //output 14
+//   // return maxNeg; //output -80
 // };
 // const arr = [12, -13, 14, 4, 2, -80, -18];
-// maxNegMinPos(arr);
+// console.log(maxNegMinPos(arr));
+// ==================================================================
+
+// exercises 4 *finish
+// function fiboNan(n) {
+//   if (n <= 2) {
+//     return n;
+//   }
+//   return (n = n - 1 + (n - 2));
+// }
+// console.log(fiboNan(2));
+//===================================================================
 
 //exercises 5 *finish
-
 // function mutual(c1, c2) {
 //   let results = [];
 //   for (let i = 0; i < c1.length; i++) {
@@ -65,15 +73,7 @@ console.log(draw(5));
 // const class2 = ["John", "Foobar", "Barbaz", "Foobaz", "Bob"];
 // console.log(mutual(class1, class2));
 
-// function isMember(a, v) {
-//     for (let i = 0; i < a.length; i++) {
-//         if (a[i] === v) {
-//             return true
-//         }
-//     }
-
-//     return false
-// }
+// =====================================================================
 
 //exercises 6 *finish
 // function fizzBuzz(n){
@@ -95,18 +95,36 @@ console.log(draw(5));
 //     return result;
 // }
 // console.log(fizzBuzz(21));
+//===========================================================
 
-// exercises 7
+// exercises 7 *finish
 // function gba(n1, n2) {
-//   return ;
+//   let n;
+//   for (let i = 1; i < (n1 + n2) / 2; i++) {
+//     if (n1 % i === 0 && n2 % i === 0) {
+//       n = i;
+//       continue;
+//     }
+//   }
+//   return n;
 // }
-// console.log(gba(10, 15));
+// console.log(gba(18, 12));
+// ===============================================================
+
+// exercises 8 *finish
+// function reSrt(a, b) {
+//   return a - b;
+// }
+// const arr = [3, 2, 1, 12, 13, 11];
+// console.log(arr.sort(reSrt));
+// console.log(arr); // [1, 11, 12, 13, 2, 3]
+// ==================================================================
 
 //exercises 9
 // function primen(n) {
-// if ( n < 1) {
+//   if (n < 1) {
 //     return [];
-// }
+//   }
 
 //   let newList = new Array(n);
 //   for (let i = 2; i < n; i++) {
@@ -119,40 +137,41 @@ console.log(draw(5));
 //   return newList;
 // }
 // console.log(primen(5));
+//=====================================================================
 
-//exercises 10
-
-// function drawDown(n) {
-//   let peak = 0;
-//   let maxDown = 0;
-//   let btwVl = 0;
-//   for (let i = 0; i < n.length; i++) {
-//     if (n[i] > n[i]) {
-//       peak = n[i];
+//exercises 10 *finish
+// const drawDown = (maxDwn) => {
+//   let kep = [];
+//   for (let i = 0; i < maxDwn.length; i++) {
+//     for (let j = 1; j < maxDwn.length; j++) {
+//       let kepEx = 0;
+//       if (maxDwn[i] - maxDwn[i + j] >= 0) {
+//         kepEx = maxDwn[i] - maxDwn[i + j];
+//         kep.push(kepEx);
+//       }
 //     }
 //   }
-
-//   //   let peak = Math.max(...n);
-//   //   let maxDown = 0;
-
-//   //   for (let i = 0; i < n.length; i++) {
-//   //     if (peak - n[i]) {
-//   //       maxDown = peak - n[i];
-//   //     }
-//   //   }
-//   //   return maxDown;
-//   return peak;
-// }
+//   return Math.max(...kep);
+// };
 
 // const chart = [110, 105, 95, 9, 80, 17, 120, 115, 11];
-// drawDown(chart);
 // console.log(drawDown(chart));
 
-//exercises 11
-// function articleFuc(text, overText, count) {}
+// ===================================================================
 
-// const articleCleverse = "Test.";
-// console.log(articleCleverse.length);
+//exercises 11
+// const articleFuc = (text, n) => {
+//   let newMasg;
+//   for (let i = 0; 1 < n; i++) {
+//     if (text[n] === " ") {
+//       return (newMasg = '"' + text.slice(i) + ' ..."');
+//     }
+//   }
+//   return newMasg;
+// };
+
+// const articleCleverse = "Test. finde the h";
+// console.log(articleFuc(articleCleverse, 20));
 
 // exercises 12 *finish
 // function filterLt(n, chackArr) {
@@ -165,29 +184,36 @@ console.log(draw(5));
 //   }
 //   return newArrBox;
 // }
+// console.log(filterLt(112, arr));
+
+// #solution 2
+// const arr = [120, 112, 111, 130, 169, 101];
+// let listitem = arr.filter((fil) => {
+//   return fil < 112;
+// });
+// console.log(listitem);
+// =================================================================
+
+// exercises 13 *finish
+// function filterLt(n, chackArr) {
+//   let newArrBox = [];
+//   if (arr[0] === 0) {
+//     return newArrBox;
+//   }
+
+//   for (let i = 0; i < chackArr.length; i++) {
+//     if (chackArr[i] > n) {
+//       newArrBox.push(chackArr[i]);
+//     }
+//   }
+//   return newArrBox;
+// }
 
 // const arr = [120, 112, 111, 130, 169, 101];
 
-// console.log(filterLt(112, arr));
-
-// exercises 13 *finish
-// function filterLt(n , chackArr){
-//     let newArrBox = [];
-
-//     for (let i = 0; i < chackArr.length; i++){
-//         if (chackArr[i] > n) {
-//             newArrBox.push(chackArr[i])
-//         }
-
-//     }
-//     return newArrBox;
-// }
-
-// const arr = [120, 112, 111, 130, 169, 101]
-
 // console.log(filterLt(0, arr));
 // ****************************************************************
-//exercises 14
+//exercises 14 *finish
 // function isMember(arr, n) {
 //   let found = false;
 //   for (let i = 0; i < arr.length; i++) {
@@ -201,8 +227,18 @@ console.log(draw(5));
 // const menberArr = [1, 3, 7, 12];
 // console.log(isMember(menberArr, 123));
 
-// // const fid = menberArr.filter()
+// const fid = menberArr.filter()
 // ****************************************************************
+// // exercises 15 *finish
+// const compoundedReturn = (amt, int, y) => {
+//   let result = 0;
+//   for (let i = 1; i <= y; i++) {
+//     result += (int / 100) * (amt + result);
+//   }
+//   return result + amt;
+// };
+
+// console.log(compoundedReturn(100, 10, 2));
 
 // exercises 16 *finish
 // function mean(onArr) {
@@ -289,27 +325,48 @@ console.log(draw(5));
 
 // exercises 18;
 // function mid(vl) {
+//   let newArr = [];
 //   if (vl.length <= 2) {
 //     return vl;
 //   }
 
-//   if (vl.length % 2 === 0) {
+//   if (vl.length % 3 === 0) {
 //     let newPos = vl.length / 2;
 //     return [vl[newPos - 1], vl[newPos]];
+//     // newArr.push([vl[newPos - 1], vl[newPos]]);
 //   }
 
 //   return newArr;
 // }
 
-// const arr = [1, 2, 3, 4];
+// const arr = [1, "foo", 3, "hello", 4];
 // console.log(mid(arr));
+// ========================================================================
+// exercises 20 *finish
+// const innitArr = (num, count) => {
+//   let numArr = [];
+//   for (let i = 0; i < count; i++) {
+//     numArr.push(num);
+//   }
+//   return numArr;
+// };
 
-//exercises 21
+// console.log(innitArr(8, 5));
+
+// const innitArr = (num, len) => {
+//   let runArr = new Array(len);
+//   return runArr.fill(num);
+// };
+// console.log(innitArr(2, 8));
+
+// =======================================================================
+
+//exercises 21 *finish
 // function flatMap(vlArr) {
 //   let newArr = [];
 //   for (let i = 0; i < vlArr.length; i++) {
-// let inArr = vlArr[i]; // วนลูปในแต่ละตำแหน่งข้างในของ index array
-//     console.log(inArr);
+//     let inArr = vlArr[i]; // วนลูปในแต่ละตำแหน่งข้างในของ index array
+//     // console.log(inArr);
 //     for (let j = 0; j < inArr.length; j++) {
 //       newArr.push(inArr[j]);
 //     }
@@ -323,22 +380,6 @@ console.log(draw(5));
 // ];
 // flatMap(arr);
 // console.log(flatMap(arr));
-// function mapMean(vArr) {
-//     let avgArr = [];
-//     for (let i = 0; i < vArr.length; i++) {
-//       for (let j = 0; j < vArr[i].length; j++) {
-//         avgArr.push(vArr[i][j]);
-//       }
-//     }
-//     return avgArr;
-//   }
-//   const arr = [
-//     [1, 2, 3],
-//     [100, 200],
-//     [10, 20],
-//   ];
-//   mapMean(arr);
-//   console.log(mapMean(arr));
 
 // exercises 22 *finish
 // function mapMean(vArr) {
@@ -387,3 +428,26 @@ console.log(draw(5));
 // const text = "Hello ";
 // tobyteText(text);
 // console.log(tobyteText(text));
+// ==================================================================
+// exercises 28
+
+// const imageBytes = [1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1];
+// const byte = [];
+// const transpost = (imageBytes, w, h) => {
+//   if (w < 1 || 1 > h) {
+//     return [];
+//   }
+//   let vaR = [];
+//   for (let i = 0; i < imageBytes.length; i++) {
+//     let wid = [];
+//   }
+//   //   let imgByi = [];
+//   //   for (let i = 0; i < h; i++) {
+//   //     let wid = new Array(w);
+//   //     wid.fill(h);
+//   //     imgByi.push(wid);
+//   //   }
+//   //   return imgByi;
+// };
+
+// console.log(transpost(imageBytes, 2, 8));
